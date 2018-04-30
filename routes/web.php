@@ -1,5 +1,9 @@
 <?php
 
+Route::get('/', function () {
+    return view('home');
+});
+
 Auth::routes();
 
 Route::resource('roger', 'RogerController', [
